@@ -70,38 +70,37 @@
                 <div class="tab-content" id="myTabContent">
         <!-- Left Panel Tabs: First Tab for ELN -->
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-            <!-- Left Panel Tab Body(ELN): Card 1: For showing underlyings. One card for each underlying -->
-                    <div class="card" id="stockCard">
-                      <div class="card-body" id="stockCardBody">
-                          <div style="float:left;text-align:left">
-                              <span  id="stockName">(AAPL.OQ)/AAPL UQ-Apple Inc</span>
-                              <br>
-                              <span  id="stockExchange">NASDAQ - NASDAQ Stock Market</span>
-                          </div>
-                        <span  id="stockCurrency">USD</span>
-                        <i class="fas fa-chart-line btn-icon"></i>
-                        <i class="fas fa-times-circle btn-icon"></i>
-                      </div>
-                      <!-- Left Panel Tab Body(ELN): Card 1.1: For displaying market data -->
-                          <div class="card" style="margin-top:5px" id="stockData">
-                            <img class="card-image-top" src="images/stock_chart.png" alt="Card image cap" style="height:140px">
-                            <div class="card-body">
-                                <!--<h5 class="card-title" style="text-align:left">Apple &nbsp; &nbsp; &nbsp;<span style="color:green">$176.21<span></h5>-->
-                                  <div class="row">
-                                     <div class="col-3"><span class="payoff-label">Spot </span><br><span class="payoff-text">$176.21</span></div>
-                                     <div class="col-3"><span class="payoff-label">52wk High </span><br><span class="payoff-text">$180.61</span></div>
-                                     <div class="col-3"><span class="payoff-label">52wk Low </span><br><span class="payoff-text">$137.01</span></div>
-                                     <div class="col-3"><span class="payoff-label">Volume </span><br><span class="payoff-text">11,366,734</span></div>
-                                  </div>
-                            </div>
-                          </div>
-                    </div>
-
                 <!-- Left Panel Tab Body(ELN): Card 2: For product configurations -->
                     <div class="card" id="solveForPanel">
                         <div class="card-header">
                             Solve for Strike
                         </div>
+                        <!-- Left Panel Tab Body(ELN): Card 1: For showing underlyings. One card for each underlying -->
+                                <div class="card" id="stockCard">
+                                  <div class="card-body" id="stockCardBody">
+                                      <div style="float:left;text-align:left">
+                                          <span  id="stockName">(AAPL.OQ)/AAPL UQ-Apple Inc</span>
+                                          <br>
+                                          <span  id="stockExchange">NASDAQ - NASDAQ Stock Market</span>
+                                      </div>
+                                    <span  id="stockCurrency">USD</span>
+                                    <i class="fas fa-chart-line btn-icon"></i>
+                                    <i class="fas fa-times-circle btn-icon"></i>
+                                  </div>
+                                  <!-- Left Panel Tab Body(ELN): Card 1.1: For displaying market data -->
+                                      <div class="card" style="margin-top:5px" id="stockData">
+                                        <img class="card-image-top" src="images/stock_chart.png" alt="Card image cap" style="height:140px">
+                                        <!--<div class="card-body">-->
+                                            <!--<h5 class="card-title" style="text-align:left">Apple &nbsp; &nbsp; &nbsp;<span style="color:green">$176.21<span></h5>-->
+                                              <div class="row">
+                                                 <div class="col-3"><span class="payoff-label">Spot </span><br><span class="payoff-text">$176.21</span></div>
+                                                 <div class="col-3"><span class="payoff-label">52wk High </span><br><span class="payoff-text">$180.61</span></div>
+                                                 <div class="col-3"><span class="payoff-label">52wk Low </span><br><span class="payoff-text">$137.01</span></div>
+                                                 <div class="col-3"><span class="payoff-label">Volume </span><br><span class="payoff-text">11,366,734</span></div>
+                                              </div>
+                                        <!--</div>-->
+                                      </div>
+                                </div>
                       <div class="card-body" id="solveForBody">
                       <!-- Left Panel Tab Body(ELN): Card 2: Strike Input Field -->
                             <div class="input-group input-group-sm mb-3" style="width:50%;float:left; padding-right:10px;">
@@ -215,14 +214,119 @@
                 <div class="alert alert-primary" role="alert">
                 This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
                 </div>
-
-                <div class="row">
-                    <div class="card col-1">
-                        <h6 class="card-title">HSBC</h5>Suhan
+        <!-- Main Pricer table starts here -->
+                <div class="pricer-table-body row">
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
                     </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+                    <div class="card pricer-table-row col-1">
+                        <div class="pricer-table-cell pricer-lp-name">HSBC</div>
+                        <div class="pricer-table-cell pricer-quote">98.32</div>
+                        <div class="pricer-table-cell pricer-client-price">98.82</div>
+                        <div class="pricer-table-cell pricer-client-yield">13.4335</div>
+                        <div class="pricer-table-cell pricer-timer">346</div>
+                        <div class="pricer-table-cell pricer-btn"><button type="button" class="btn btn-success" style="width:100%">Order</button></div>
+                        <div class="pricer-table-cell pricer-limits">100.0K/1.0M</div>
+                    </div>
+
                 </div>
-
-
+<hr>
                 <table class="table table-sm table-hover  table-striped">
                   <thead>
                     <tr>
