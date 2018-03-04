@@ -204,18 +204,23 @@
             <div id="pricePanel" class="col-8" style="margin-top:5px">
                 <h5>Dealer1
                     <div style="float:right;margin-top:10px">
-                        <i class="fas fa-th" style="margin-right:5px;color:#f4f4f4"></i>
-                        <i class="fas fa-align-justify" style="margin-right:5px;color:#c1c1c1"></i>
-                        <i class="fas fa-th-list" style="margin-right:5px;color:#f4f4f4"></i>
+                        <a style="margin-right:5px;color:#455a64;font-size:0.8em" href="#">
+                            <i class="fab fa-telegram-plane" style="margin-right:5px;color:#455a64"></i>
+                            Send Quote in Email
+                        </a>
+                        &nbsp;|&nbsp;
+                        <i class="fas fa-th" style="margin-right:5px;color:#c1c1c1"></i>
+                        <i class="fas fa-align-justify" style="margin-right:5px;color:#455a64"></i>
+                        <i class="fas fa-th-list" style="margin-right:5px;color:#c1c1c1"></i>
                     </div>
                 </h3>
 
                 <hr>
                 <div class="alert alert-primary" role="alert">
-                This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                RFQ Generated : 10002052
                 </div>
         <!-- Main Pricer table starts here -->
-                <div class="pricer-table-body row">
+                <div class="pricer-table-body row shadow">
                     <div class="card pricer-table-row col-1">
                         <div class="pricer-table-cell pricer-lp-name">HSBC</div>
                         <div class="pricer-table-cell pricer-quote">98.32</div>
@@ -327,43 +332,125 @@
 
                 </div>
 <hr>
-                <table class="table table-sm table-hover  table-striped">
+<div style="width:100%;overflow-x:scroll" class="card shadow">
+    <div style="padding:10px;font-size:0.85em; color: #37474f;line-height:1.2em">
+        <span style="color: #37474f;font-weight:400">Owner: </span>
+        <span class="badge badge-light" style="margin-left:5px">All</span>
+        <span class="badge badge-light" style="margin-left:5px">Group</span>
+        <span class="badge badge-light" style="margin-left:5px">Self</span>
+
+        <span style="margin-left:15px; color: #37474f;font-weight:400">Trade Date: </span>
+        <input type="text" style="width:75px;border:none;text-align:right" value="26-Feb-18">
+        <i class="fas fa-calendar-alt" style="color:#37474f;margin-left:2px"></i>
+
+        <div class="form-check form-check-inline" style="margin-left:15px;">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Quote History</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Order History</label>
+        </div>
+
+        <span style="margin-left:15px; color: #37474f;font-weight:400">Max Records to Fetch: </span>
+        <input type="text" style="width:25px;border:none;border-bottom:1px solid #37474f;text-align:center" value="10">
+
+        <i class="fas fa-sync-alt" style="margin-left:25px"></i>
+    </div>
+                <table class="table table-sm table-hover  table-striped" style="text-align:center;vertical-align: middle;font-size:0.7em;white-space: nowrap">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                      <th scope="col">Handle</th>
-                      <th scope="col">Handle</th>
-                      <th scope="col">Handle</th>
-                      <th scope="col">Handle</th>
-                      <th scope="col">Handle</th>
-                      <th scope="col">Handle</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">RFQ Id</th>
+                      <th scope="col">PDD Ref</th>
+                      <th scope="col">Create Pool</th>
+                      <th scope="col">RFQ Details</th>
+                      <th scope="col">Solve For</th>
+                      <th scope="col">Provider</th>
+                      <th scope="col">Price(%)</th>
+                      <th scope="col">Type</th>
+                      <th scope="col">Share</th>
+                      <th scope="col">Strike(%)</th>
+                      <th scope="col">Tenor (months)</th>
+                      <th scope="col">Ccy</th>
+                      <th scope="col">Order Qty</th>
+                      <th scope="col">Trade Date</th>
+                      <th scope="col">Settl. Date</th>
+                      <th scope="col">Expiry Date</th>
+                      <th scope="col">Mat. Date</th>
+                      <th scope="col">Exchange</th>
+                      <th scope="col">Value</th>
+                      <th scope="col">Barr. Type</th>
+                      <th scope="col">KO % of init</th>
+                      <th scope="col">Issuer Remark</th>
+                      <th scope="col">Ext RFQ Id</th>
+                      <th scope="col">Quote Requested At</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
+                      <th scope="row">10002052</th><td>ELN0000001</td>
+                      <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">Create Pool</button></td>
+                      <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">RFQ Details</button></td>
+                      <td>Strike(%)</td><td>Vontobel</td><td>97.06</td><td>Simple</td><td>AAPL.OQ</td><td>100.74</td>
+                      <td>1</td><td>USD</td><td>700,000</td>
+                      <td>26-Feb-18</td><td>12-Mar-18</td><td>11-Apr-18</td><td>13-Apr-18</td>
+                      <td>NASDAQ</td><td>T+14</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                      <td>288806906</td><td>26-Feb-2018 07:04:06 PM</td>
                     </tr>
                     <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
+                    <th scope="row">10002052</th><td>ELN0000001</td>
+                        <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">Create Pool</button></td>
+                        <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">RFQ Details</button></td>
+                        <td>Strike(%)</td><td>Vontobel</td><td>97.06</td><td>Simple</td><td>AAPL.OQ</td><td>100.74</td>
+                        <td>1</td><td>USD</td><td>700,000</td>
+                        <td>26-Feb-18</td><td>12-Mar-18</td><td>11-Apr-18</td><td>13-Apr-18</td>
+                        <td>NASDAQ</td><td>T+14</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        <td>288806906</td><td>26-Feb-2018 07:04:06 PM</td>
                     </tr>
                     <tr>
-                      <th scope="row">3</th>
-                      <td>Larry </td>
-                      <td>Thornton</td>
-                      <td>@twitter</td>
+                        <th scope="row">10002052</th><td>ELN0000001</td>
+                        <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">Create Pool</button></td>
+                        <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">RFQ Details</button></td>
+                        <td>Strike(%)</td><td>Vontobel</td><td>97.06</td><td>Simple</td><td>AAPL.OQ</td><td>100.74</td>
+                        <td>1</td><td>USD</td><td>700,000</td>
+                        <td>26-Feb-18</td><td>12-Mar-18</td><td>11-Apr-18</td><td>13-Apr-18</td>
+                        <td>NASDAQ</td><td>T+14</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        <td>288806906</td><td>26-Feb-2018 07:04:06 PM</td>
                     </tr>
+                    <tr>
+                        <th scope="row">10002052</th><td>ELN0000001</td>
+                        <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">Create Pool</button></td>
+                        <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">RFQ Details</button></td>
+                        <td>Strike(%)</td><td>Vontobel</td><td>97.06</td><td>Simple</td><td>AAPL.OQ</td><td>100.74</td>
+                        <td>1</td><td>USD</td><td>700,000</td>
+                        <td>26-Feb-18</td><td>12-Mar-18</td><td>11-Apr-18</td><td>13-Apr-18</td>
+                        <td>NASDAQ</td><td>T+14</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        <td>288806906</td><td>26-Feb-2018 07:04:06 PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10002052</th><td>ELN0000001</td>
+                        <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">Create Pool</button></td>
+                        <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">RFQ Details</button></td>
+                        <td>Strike(%)</td><td>Vontobel</td><td>97.06</td><td>Simple</td><td>AAPL.OQ</td><td>100.74</td>
+                        <td>1</td><td>USD</td><td>700,000</td>
+                        <td>26-Feb-18</td><td>12-Mar-18</td><td>11-Apr-18</td><td>13-Apr-18</td>
+                        <td>NASDAQ</td><td>T+14</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        <td>288806906</td><td>26-Feb-2018 07:04:06 PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10002052</th><td>ELN0000001</td>
+                        <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">Create Pool</button></td>
+                        <td><button type="button" class="btn btn-primary" style="font-size:0.7em;padding:5px">RFQ Details</button></td>
+                        <td>Strike(%)</td><td>Vontobel</td><td>97.06</td><td>Simple</td><td>AAPL.OQ</td><td>100.74</td>
+                        <td>1</td><td>USD</td><td>700,000</td>
+                        <td>26-Feb-18</td><td>12-Mar-18</td><td>11-Apr-18</td><td>13-Apr-18</td>
+                        <td>NASDAQ</td><td>T+14</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+                        <td>288806906</td><td>26-Feb-2018 07:04:06 PM</td>
+                    </tr>
+
                   </tbody>
                 </table>
+            </div>
             </div>
         </div>
     </div>
