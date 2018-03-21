@@ -1,9 +1,32 @@
-<html>
-<head>This is a sample page</head>
+<!DOCTYPE html>
+<html lang="en-US">
+<script src="angular.min.js"></script>
+<script>
+angular.module('demo', []).controller('Hello', function($scope, $http) {
+    $http.get('https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=MSFT&interval=1min&apikey=demo').
+        then(function(response) {
+            alert("response received")
+            console.log(response.data);
+            $scope.greeting = response.data;
+        });
+});
+</script>
 <body>
+<!--
+<div ng-app="">
+  <p>Name : <input type="text" ng-model="name"></p>
+  <h1>Hello {{name}}</h1>
+</div>-->
 
-<h1>Hello World</h1>
+<div ng-app="demo" ng-init="quantity=1;cost=5">
+		<div ng-controller="Hello">
+			<p>The ID is {{greeting.id}}</p>
+			<p>The content is {{greeting.content}}</p>
+		</div>
 
+<p>Total in dollar: {{ quantity * cost }}</p>
+
+</div>
 
 </body>
 </html>
