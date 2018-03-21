@@ -1,0 +1,34 @@
+.menu{
+    height: 40px;
+    background-color: #03a9f4;
+    color: white;
+    line-height: 40px;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#rightMenu{
+    text-align: right;
+}
+#leftMenu{
+    text-align: left;
+    border-right: 1px solid #e1f5fe;
+}
+.icon-pad-left{
+    padding-left: 10px;
+}
+.icon-pad-right{
+    padding-right: 10px;
+}
+.nav-item{
+    padding-right: 20px;
+    font-size: 0.8em;
+}
+.main-body{
+    margin-top: 10px;
+}
+#inputPanel{
+    min-height: 300px;
+}
+#blotterPanel{
+    min-height: 300px;
+}
