@@ -1,1 +1,1 @@
-<?php header( 'Location: /eqconnect.html' ) ;  ?>
+<?php header( 'Location: /zerodha.html' ) ;  ?>
